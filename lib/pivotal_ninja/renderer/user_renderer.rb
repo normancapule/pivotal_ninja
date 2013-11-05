@@ -14,7 +14,7 @@ module PivotalNinja
       property :kind
       property :role
       property :wants_comment_notification_emails
-      collection :projects, class: Project, extend: Renderer::ProjectRenderer
+      collection :projects, class: PivotalNinja::Project, extend: Renderer::ProjectRenderer
     end
   end
 end

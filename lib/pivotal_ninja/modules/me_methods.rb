@@ -2,7 +2,7 @@ module PivotalNinja
   module Modules
     module MeMethods
       def me
-        User.new.extend(PivotalNinja::Renderer::UserRenderer).from_json(connection["/me"].get)
+        PivotalNinja::User.new.extend(PivotalNinja::Renderer::UserRenderer).from_json(connection["/me"].get)
       end
 
       def notifications
@@ -10,7 +10,7 @@ module PivotalNinja
       end
 
       def activity
-        JSON(connection["/my/activity"].get).map{|me| Activity.new.extend(PivotalNinja::Renderer::ActivityRenderer).from_json(me.to_json)}
+        JSON(connection["/my/activity"].get).map{|me| PivotalNinja::Activity.new.extend(PivotalNinja::Renderer::ActivityRenderer).from_json(me.to_json)}
       end
     end
   end

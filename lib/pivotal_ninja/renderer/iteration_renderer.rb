@@ -8,7 +8,7 @@ module PivotalNinja
       property :project_id
       property :team_strength
       property :number
-      collection :stories, class: Story, extend: Renderer::StoryRenderer
+      collection :stories, class: PivotalNinja::Story, extend: Renderer::StoryRenderer
     end
   end
 end

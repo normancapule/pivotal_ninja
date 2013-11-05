@@ -1,2 +1,2 @@
-class User < OpenStruct
+class PivotalNinja::User < OpenStruct
 end

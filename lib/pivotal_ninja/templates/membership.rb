@@ -1,3 +1,3 @@
-class Membership < OpenStruct
+class PivotalNinja::Membership < OpenStruct
 end
 

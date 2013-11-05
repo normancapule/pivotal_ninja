@@ -1,3 +1,3 @@
-class Iteration < OpenStruct
+class PivotalNinja::Iteration < OpenStruct
 end
 

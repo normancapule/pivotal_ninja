@@ -1,3 +1,3 @@
-class Activity < OpenStruct
+class PivotalNinja::Activity < OpenStruct
 end
 

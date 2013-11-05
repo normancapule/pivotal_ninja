@@ -1,3 +1,3 @@
-class Story < OpenStruct
+class PivotalNinja::Story < OpenStruct
 end
 

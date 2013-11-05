@@ -7,7 +7,7 @@ module PivotalNinja
       property :project_id
       property :kind
       property :role
-      property :person, class: User, extend: Renderer::UserRenderer
+      property :person, class: PivotalNinja::User, extend: Renderer::UserRenderer
     end
   end
 end

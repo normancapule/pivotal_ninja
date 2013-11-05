@@ -1,3 +1,3 @@
-class Project < OpenStruct
+class PivotalNinja::Project < OpenStruct
 end
 
