@@ -1,0 +1,3 @@
+class Iteration < OpenStruct
+end
+

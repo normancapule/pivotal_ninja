@@ -1,0 +1,3 @@
+class Membership < OpenStruct
+end
+
