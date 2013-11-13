@@ -22,12 +22,12 @@ module PivotalNinja
     
     private
 
-    def new_connection
-      @connections[@token] = RestClient::Resource.new("https://www.pivotaltracker.com#{api_path}", :headers => {'X-TrackerToken' => @token, 'Content-Type' => 'application/xml'})
-    end
+      def new_connection
+        @connections[@token] = RestClient::Resource.new("https://www.pivotaltracker.com#{api_path}", :headers => {'X-TrackerToken' => @token, 'Content-Type' => 'application/xml'})
+      end
 
-    def api_path
-      '/services/v5'
-    end
+      def api_path
+        '/services/v5'
+      end
   end
 end
