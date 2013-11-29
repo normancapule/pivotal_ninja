@@ -10,7 +10,7 @@ module PivotalNinja
       end
 
       def activity
-        JSON(connection["/my/activity"].get).map{|me| PivotalNinja::Activity.new.extend(PivotalNinja::Renderer::ActivityRenderer).from_json(me.to_json)}
+        JSON(connection["/my/activity"].get).map{|activity| PivotalNinja::Activity.new.extend(PivotalNinja::Renderer::ActivityRenderer).from_json(activity.to_json)}
       end
     end
   end
